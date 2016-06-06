@@ -1,0 +1,39 @@
+.wrapper{
+  height: 100%;
+  text-align: center;
+  background-color: black;
+}
+.btn-show{
+  text-transform: capitalize;
+}
+.top-buffer{
+  margin-top: 20px;
+}
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+/*footer*/
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -25px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 25px; /* .push must be the same height as .footer */
+}
+.footer{
+  background-color: white;
+  position: relative;
+  top: 25px;
+}
+.copyright{
+  color: #c8c8c8;
+  font-family: Verdana, Geneva, sans-serif;
+  position: relative;
+  top: 2px;
+  font-size: 15px;
+}
