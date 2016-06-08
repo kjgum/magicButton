@@ -10,11 +10,19 @@ a {
   color: black;
 }
 
+a:hover {
+  color: white;
+}
+
+.navbar {
+  background-color: #f2f2f2; 
+}
+
 .btn-show{
-  text-transform: capitalize;
-  color: black;
+  text-transform: lowercase;
+  color: white;
   margin: 10px;
-  background-color: #c8c8c8;
+  background-color: #808080;
 }
 
 .panelHead {
@@ -65,7 +73,7 @@ html, body {
 }
 
 .footer{
-  background-color: white;
+  background-color: #f2f2f2;
   position: relative;
   top: 25px;
   opacity: .7;

@@ -23,6 +23,8 @@ $(document.body).on('click', '.btn-show', function() {
     + show + "&api_key=dc6zaTOxFJmzC&limit=12";
     console.log(url);
     $.ajax({url: url, method: 'GET'})
+
+
     // upon response append gifs to gif-area
     .done(function(response) {
         let data = response.data;
@@ -51,7 +53,7 @@ $(document.body).on('click', '.btn-show', function() {
 $(document.body).on('click', '#btn-create', function() {
     var btnText = $('#text-input').val().trim();
     if (btnText == "") {
-        console.log('No input');
+        console.log('nada input');
         return false;
     }
     
@@ -62,7 +64,9 @@ $(document.body).on('click', '#btn-create', function() {
             .attr('type','button')
             .text(btnText);
     $('#available-shows').append($btn);
-    return false
+    $('#text-input').val('');
+
+    return false;
 })
 
 
