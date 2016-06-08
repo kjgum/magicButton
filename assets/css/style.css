@@ -2,19 +2,50 @@
   height: 100%;
   text-align: center;
   background-color: black;
+  background-image: url('http://science-all.com/images/wallpapers/damask-wallpaper/damask-wallpaper-8.jpg');
+  background-attachment: fixed;
 }
+
+
+
 .btn-show{
   text-transform: capitalize;
+  color: black;
+  margin: 10px;
+  background-color: #c8c8c8;
 }
+
+.panelHead {
+  background-color: black;
+  color: white;
+}
+
+.panelBody {
+  background-color: #c8c8c8;
+}
+
+
 .top-buffer{
   margin-top: 20px;
 }
+
 * {
     margin: 0;
 }
+
+img {
+  width: 100%;
+}
+
+.panel {
+  height: 400px;
+}
+
 html, body {
     height: 100%;
+    font-family: 'Buda', cursive;
 }
+
 /*footer*/
 .wrapper {
     min-height: 100%;
@@ -22,18 +53,26 @@ html, body {
     height: 100%;
     margin: 0 auto -25px; /* the bottom margin is the negative value of the footer's height */
 }
+
 .footer, .push {
     height: 25px; /* .push must be the same height as .footer */
 }
+
 .footer{
   background-color: white;
   position: relative;
   top: 25px;
+  opacity: .7;
 }
+
 .copyright{
   color: #c8c8c8;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: 'Cedarville Cursive', cursive;
   position: relative;
   top: 2px;
   font-size: 15px;
+}
+
+.copyright a, a:hover {
+  color: #c8c8c8;
 }
