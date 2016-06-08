@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Buda:300|Cedarville+Cursive' rel='stylesheet' type='text/css'>
 
+
 </head>
 <body>
   <div class="wrapper">
@@ -20,12 +21,23 @@
         <div class="navbar-header">
           <a class="navbar-brand"></a>
         </div>
+
         <form class="navbar-form navbar-right" role="search">
+        
+
+        <a href="#" data-toggle="popover" title="help!" data-content="search any term, click any of the buttons, click on any gif to start playing it">
+          <span class="glyphicon glyphicon-question-sign"></span>
+        </a>
+
           <div class="form-group">
             <input type="text" id="text-input" class="form-control" placeholder="">
           </div>
-          <button type="submit" id="btn-create" class="btn btn-default">Submit</button>
+          <button type="submit" id="btn-create" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+
         </form>
+
+      
+
       </div><!-- /.container-fluid -->
     </nav><!-- /.navbar -->
     <!-- TV show buttons -->
@@ -46,7 +58,15 @@
       <a href="https://www.kristingumbert.com">Kristin Gumbert</a> | 2016
     </span>
   </div>
+  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
   <script src="assets/javascript/app.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();   
+    });
+</script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>

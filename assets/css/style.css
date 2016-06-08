@@ -6,7 +6,9 @@
   background-attachment: fixed;
 }
 
-
+a {
+  color: black;
+}
 
 .btn-show{
   text-transform: capitalize;
@@ -29,9 +31,7 @@
   margin-top: 20px;
 }
 
-* {
-    margin: 0;
-}
+
 
 img {
   width: 100%;
@@ -39,6 +39,12 @@ img {
 
 .panel {
   height: 400px;
+}
+
+.panel-heading {
+  color: grey;
+  background-color: #c8c8c8;
+  text-align: left;
 }
 
 html, body {
