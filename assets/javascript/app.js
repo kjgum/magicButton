@@ -1,13 +1,13 @@
-var showsAry = ['funny','food','puppy'];
+var gifArray = ['funny','food','puppy'];
 
 $( document ).ready(function() {
-    for (i = 0; i < showsAry.length; i++) {
+    for (i = 0; i < gifArray.length; i++) {
         let $showBtn = $('<button>')
             .addClass('btn btn-show')
-            .attr('data-input',showsAry[i])
+            .attr('data-input',gifArray[i])
             .attr('type','button')
-            .text(showsAry[i]);
-        $('#available-shows').append($showBtn); 
+            .text(gifArray[i]);
+        $('#available-gif').append($showBtn); 
     }
 });
 
@@ -63,7 +63,7 @@ $(document.body).on('click', '#btn-create', function() {
             .attr('data-input',btnText)
             .attr('type','button')
             .text(btnText);
-    $('#available-shows').append($btn);
+    $('#available-gif').append($btn);
     $('#text-input').val('');
 
     return false;
