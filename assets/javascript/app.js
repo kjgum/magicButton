@@ -12,13 +12,13 @@ $( document ).ready(function() {
 });
 
 
-// Get & display gifs on button click
+// display gifs on button click
 $(document.body).on('click', '.btn-show', function() {
 
     $('#gif-area').empty() 
     var show = $(this).data('input');
 
-    // XML request 
+
     var url = "http://api.giphy.com/v1/gifs/search?q=" 
     + show + "&api_key=dc6zaTOxFJmzC&limit=12";
     console.log(url);
